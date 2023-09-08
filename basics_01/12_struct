@@ -1,0 +1,36 @@
+//strcut own type
+
+contract MyContract {
+    struct Book {
+    
+        string title;
+        string author;
+        string completed;
+    }
+}
+
+
+//array of books
+
+Book[] public books;
+
+function add(string memory _title, string memory _author, string memory _completed) public {
+    books.push(Book(_title, _author, false));
+
+function get(uint _index) public view returns (Book[]) {
+    return (string memory title, string memory author, bool completed)
+
+
+Book storage book = books[_index];
+return (book.title, book.author, book.completed);
+
+//update completed
+
+function complete(uint _index) public {
+    book storage book = books[_index];
+    book.completed = true;
+}
+
+
+}
+}

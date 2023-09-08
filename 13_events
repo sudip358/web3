@@ -1,0 +1,20 @@
+
+contract MyContract{
+    string public message = "Hello World";
+
+    event MessageUpdated(
+        address indexed _user,
+        string _message
+    );
+
+
+//emit is used to trigger event
+
+function updateMessage(string memory _newMessage) public {
+    message = _newMessage;
+    emit MessageUpdated(msg.sender, _newMessage);
+
+}
+
+
+}
