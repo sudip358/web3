@@ -22,3 +22,5 @@ contract Counter {
 }
 
 //output
+
+![Image description](https://prnt.sc/TNt6VD4U762Z)
